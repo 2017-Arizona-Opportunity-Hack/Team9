@@ -9,13 +9,17 @@ body{
 	height:100%
 }
 #main{
-	background-color:#b3ecff;
 	margin:auto;
 	display: table-row;
 	position: fixed;
 	height: 100%;
 }
+#colored{
+	background-color:#b3ecff;
+	
+}
 img{
+	padding-top:10%;
 	display: block;
 	margin: auto;
     width: 100%;
@@ -33,27 +37,30 @@ h1{
 h2{
 	padding: 5px;
 	font-weight: normal;
-	background-color:yellow;
+	background-color:	#e6ffff;
 }
 form{
 	border-top: solid;
 	border-width:0.5px;
-	background-color:grey;
+	background-color:#e5f9ff;
 
+}
+p{
+	padding-top: 5px;
+	padding-bottom: 0;
+	margin-left: 10%;
+	color: black;
 }
 input{
 	font-size: 15px;
-	width:100%;
+	width:75%;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-
 }
 #submit{
 	text-align: center;
 	width:40%;
-	padding:5%;
+	padding:1%;
 }
 .login{
 	padding:0px;
@@ -65,6 +72,6 @@ input{
 	margin: auto;
 	width: 40%;
 	padding-top:1%;
-	top: 20%; left: 0; bottom: 0; right: 0;
+	padding-bottom:5%;
 	text-align: left;
 }
