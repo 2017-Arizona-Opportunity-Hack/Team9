@@ -1,77 +1,23 @@
-*{
-	padding:0;
-	margin:0;
-}
-body{
-	margin:auto;
-	width:50%;
-	min-width: 957px;
-	height:100%
-}
-#main{
-	margin:auto;
-	display: table-row;
-	position: fixed;
-	height: 100%;
-}
-#colored{
-	background-color:#b3ecff;
-	
+h3{
+    font-weight: 800;
 }
 img{
-	padding-top:10%;
-	display: block;
-	margin: auto;
-    width: 100%;
-	height: 250px;
+	padding:0;
+	margin-bottom:-50px;
 }
-h1{
-	font-size: 50px;
-	padding: 10px;
-    position: absolute;
-	color:white;
-	text-shadow: 2px 2px #000;
-    transform: translate(0%, -75%);
-	margin:auto;
-}
-h2{
-	padding: 5px;
-	font-weight: normal;
-	background-color:	#e6ffff;
-}
-form{
-	border-top: solid;
-	border-width:0.5px;
-	background-color:#e5f9ff;
 
+.title{
+	margin-bottom:10px;
 }
-p{
-	padding-top: 5px;
-	padding-bottom: 0;
-	margin-left: 10%;
-	color: black;
-}
-input{
-	font-size: 15px;
-	width:75%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-#submit{
-	text-align: center;
-	width:40%;
-	padding:1%;
-}
-.login{
-	padding:0px;
+.input-group{
 	margin:auto;
-	width: 30%;
-	padding: 10px;
 }
-.absoluteCenter {
-	margin: auto;
-	width: 40%;
-	padding-top:1%;
-	padding-bottom:5%;
-	text-align: left;
+.loginForm input[type=text], .loginForm input[type=password]{
+	margin-bottom:15px;
+}
+.loginForm input[type=submit]{
+	background:#0080ff;
+	color:#fff;
+	font-weight:700;
+	
 }
