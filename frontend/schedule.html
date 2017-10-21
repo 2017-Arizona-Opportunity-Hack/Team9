@@ -1,82 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<style>
-body {margin:0;}
-	
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-.active {
-    background-color: #00609B;
-}
-
-#outer {
-  width: 100%;
-  text-align: center;
-}
-
-#inner {
-  display: inline-block;
-}
-
-h1 {text-align:center;}
-h2 {text-align:center;}
-h3 {text-align:center;}
-
-p {text-align:center;}
-
-form {text-align:center;}
-
-.container {
-        width: 500px;
-        clear: both;
-    }
-    .container input {
-        width: 100%;
-        clear: both;
-		
-    }
-
-
-	</style>
+	<title>Arizona Foster Child Charity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="schedule.css" rel="stylesheet">
 	</head>
 	
 	<body>
 	<ul>
-		<li><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\login.html">Home</a></li>
+		<li><a href="http://arizonansforchildren.org/">Home</a></li>
 		<li><a class="active" href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\schedule.html">Schedule Appointment(s)</a></li>
 		<li><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\view.html">View Appointment(s)</a></li>
-		<li style="float:right"><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\index.html">Logout</a></li>
+		<li style="float:right"><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\login.html">Logout</a></li>
 	</ul>
 		
 		<div style="margin-top:60px">
@@ -84,10 +20,10 @@ form {text-align:center;}
 				
 				<form action="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\added.html">
 				Child name
-				<input type="text" name="firstname" value="">
+				<input type="text" name="childname" value="">
 				<br><br>
 				Parent/Guardian name
-				<input type="text" name="lastname" value="">
+				<input type="text" name="guardianname" value="">
 				<br><br>
 				Date
 				<input type="date" name="date">
@@ -98,7 +34,11 @@ form {text-align:center;}
 				Check-out
 				<input type="time" name="usr-time">
 				<br><br>
-				<input type="submit" value="Submit">
+				Location
+				<input type="radio" name="location" value="1">Downtown Phoenix Center<br>
+				<input type="radio" name="location" value="2">East Valley Center<br>
+				<input type="radio" name="location" value="3">Private Supervised Visits & Safe Exchanges<br><br>
+				<input type="submit" value="Schedule Appointment">
 				</form> 
 		</div>
 		
