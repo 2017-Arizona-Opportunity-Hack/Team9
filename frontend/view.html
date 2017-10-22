@@ -8,9 +8,8 @@
 	<link href="login.css" rel="stylesheet">
 
 	</head>
-	
 	<body>
-	<ul>
+	<ul class = "unselectable">
 		<li><a href="schedule.html">Schedule Appointment</a></li>
 		<li><a class="active" href="view.html">View Appointment</a></li>
 		<li style="float:right"><a href="login.html">Logout</a></li>
@@ -18,13 +17,13 @@
 		<div style="margin-top:60px">
 				<div class="col-md-4 col-md-offset-4 text-center">
 					<div class="title">
-						<h2>View Appointment</h2>
+						<h2 class="unselectable">View Appointment</h2>
 					</div>
 					<form action="" class="loginForm">
 						<div class="input-group">
 							<input type="text" id="name" class="form-control" placeholder="Child Name">
 							<input type="text" id="name" class="form-control" placeholder="Parent/Guardian Name">
-							<input type="text" id="name" class="form-control" placeholder="Date">
+							<input type="date" id="name" class="form-control" placeholder="Date">
 							<a href="schedule.html"><input type="submit" id="submit" class="form-control" value="Submit"></a>
 
 						</div>

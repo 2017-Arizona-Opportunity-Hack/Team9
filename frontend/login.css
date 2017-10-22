@@ -1,3 +1,10 @@
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 h3{
     font-weight: 800;
 }
@@ -12,7 +19,7 @@ img{
 .input-group{
 	margin:auto;
 }
-.loginForm input[type=text], .loginForm input[type=password]{
+.loginForm input[type=text], .loginForm input[type=password], .loginForm input[type=date], .loginForm input[type=time]{
 	margin-bottom:15px;
 }
 .loginForm input[type=submit]{
