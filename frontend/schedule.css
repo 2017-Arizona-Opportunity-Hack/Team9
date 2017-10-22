@@ -26,6 +26,8 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #111;
+	text-decoration:none;
+	color:#AAA;
 }
 
 li:last-child {
@@ -34,6 +36,11 @@ li:last-child {
 
 .active {
     background-color: #00609B;
+	
+}
+.active:hover{
+	text-decoration:none;
+	color:#AAA;
 }
 
 body{
