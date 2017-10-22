@@ -2,46 +2,44 @@
 <html>
 	<head>
 	<title>Arizona Foster Child Charity</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="schedule.css" rel="stylesheet">
+	<link href="login.css" rel="stylesheet">
+
 	</head>
 	
 	<body>
 	<ul>
 		<li><a href="http://arizonansforchildren.org/">Home</a></li>
-		<li><a class="active" href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\schedule.html">Schedule Appointment(s)</a></li>
-		<li><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\view.html">View Appointment(s)</a></li>
-		<li style="float:right"><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\login.html">Logout</a></li>
+		<li><a class="active" href="schedule.html">Schedule Appointment(s)</a></li>
+		<li><a href="view.html">View Appointment(s)</a></li>
+		<li style="float:right"><a href="login.html">Logout</a></li>
 	</ul>
 		
 		<div style="margin-top:60px">
-			<h2>Schedule Appointment(s)</h2>
-				
-				<form action="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\added.html">
-				Child name
-				<input type="text" name="childname" value="">
-				<br><br>
-				Parent/Guardian name
-				<input type="text" name="guardianname" value="">
-				<br><br>
-				Date
-				<input type="date" name="date">
-				<br><br>
-				Check-in
-				<input type="time" name="usr-time">
-				<br><br>
-				Check-out
-				<input type="time" name="usr-time">
-				<br><br>
-				Location
-				<input type="radio" name="location" value="1">Downtown Phoenix Center<br>
-				<input type="radio" name="location" value="2">East Valley Center<br>
-				<input type="radio" name="location" value="3">Private Supervised Visits & Safe Exchanges<br><br>
-				<input type="submit" value="Schedule Appointment">
-				</form> 
-		</div>
-		
+			<div class="col-md-4 col-md-offset-4 text-center">
+					<div class="title">
+						<h2>Schedule Appointment</h2>
+					</div>
+					<form action="" class="loginForm">
+						<div class="input-group">
+							<input type="text" id="name" class="form-control" placeholder="Child Name">
+							<input type="text" id="name" class="form-control" placeholder="Parent/Guardian Name">
+							<input type="text" id="name" class="form-control" placeholder="Date">
+							<input type="text" id="name" class="form-control" placeholder="Check-in">
+							<input type="text" id="name" class="form-control" placeholder="Check-out">
+							<select  class="form-control" id="down">
+								<option selected="true" disabled="disabled">Select Location</option>
+								<option >Downtown Phoenix Center</option>
+								<option>East Valley Center</option>
+								<option>Private Supervised Visits & Safe Exchanges</option>
+							</select>
+							<a href="schedule.html"><input type="submit" id="submit" class="form-control" value="Submit"></a>
+						</div>
+					</form>
+			</div>
+		</div>		
 	
 	
 	</body>

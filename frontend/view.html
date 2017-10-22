@@ -3,33 +3,34 @@
 	<head>
 	<title>Arizona Foster Child Charity</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="schedule.css" rel="stylesheet">
+	<link href="login.css" rel="stylesheet">
+
 	</head>
 	
 	<body>
 	<ul>
-		<li><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\home.html">Home</a></li>
-		<li><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\schedule.html">Schedule Appointment(s)</a></li>
-		<li><a class="active" href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\view.html">View Appointment(s)</a></li>
-		<li style="float:right"><a href="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\login.html">Logout</a></li>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="schedule.html">Schedule Appointment(s)</a></li>
+		<li><a class="active" href="view.html">View Appointment(s)</a></li>
+		<li style="float:right"><a href="login.html">Logout</a></li>
 	</ul>
-		
 		<div style="margin-top:60px">
-			<h2>View Appointment(s)</h2>
-				
-				<form action="C:\Users\Jeffrey\Desktop\tainhenning\Team9\frontend\added.html">
-				Child name
-				<input type="text" name="firstname" value="">
-				<br><br>
-				Parent/Guardian name
-				<input type="text" name="lastname" value="">
-				<br><br>
-				Date
-				<input type="date" name="date">
-				<br><br>
-				<input type="submit" value="View Appointment">
-				</form> 
+				<div class="col-md-4 col-md-offset-4 text-center">
+					<div class="title">
+						<h2>View Appointment</h2>
+					</div>
+					<form action="" class="loginForm">
+						<div class="input-group">
+							<input type="text" id="name" class="form-control" placeholder="Child Name">
+							<input type="text" id="name" class="form-control" placeholder="Parent/Guardian Name">
+							<input type="text" id="name" class="form-control" placeholder="Date">
+							<a href="schedule.html"><input type="submit" id="submit" class="form-control" value="Submit"></a>
+
+						</div>
+					</form>
+			</div>
 		</div>
 		
 	
