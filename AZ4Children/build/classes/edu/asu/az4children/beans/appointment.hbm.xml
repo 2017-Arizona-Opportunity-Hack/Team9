@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 22, 2017 2:36:10 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.asu.az4children.beans.Appointment" table="APPOINTMENT">
+        <id name="appointmentId" type="int">
+            <column name="APPOINTMENTID" />
+            <generator class="increment" />
+        </id>
+        <property name="checkInTime" type="java.util.Calendar">
+            <column name="CHECKINTIME" />
+        </property>
+        <property name="checkOutTime" type="java.util.Calendar">
+            <column name="CHECKOUTTIME" />
+        </property>
+        <property name="numberOfPeopleVisiting" type="int">
+            <column name="NUMBEROFPEOPLEVISITING" />
+        </property>
+        <many-to-one name="parent" class="edu.asu.az4children.beans.Parent" fetch="join">
+            <column name="PARENT" />
+        </many-to-one>
+        <many-to-one name="kid" class="edu.asu.az4children.beans.Kid" fetch="join">
+            <column name="KID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2017 8:35:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.asu.az4children.beans.Parent" table="PARENT">
+        <id name="parentId" type="int">
+            <column name="PARENTID" />
+            <generator class="increment" />
+        </id>
+        <property name="pfirstName" type="java.lang.String">
+            <column name="PFIRSTNAME" />
+        </property>
+        <property name="plastName" type="java.lang.String">
+            <column name="PLASTNAME" />
+        </property>
+        <property name="emailId" type="java.lang.String">
+            <column name="EMAILID" />
+        </property>
+        <one-to-one name="kid" class="edu.asu.az4children.beans.Kid" cascade="all"></one-to-one>
+    </class>
+</hibernate-mapping>

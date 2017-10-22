@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2017 8:35:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.asu.az4children.beans.Kid" table="KID">
+        <id name="kidId" type="int">
+            <column name="KIDID" />
+            <generator class="increment" />
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="dateOfBirth" type="java.util.Calendar">
+            <column name="DATEOFBIRTH" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <one-to-one name="parent" class="edu.asu.az4children.beans.Parent"></one-to-one>
+    </class>
+</hibernate-mapping>
