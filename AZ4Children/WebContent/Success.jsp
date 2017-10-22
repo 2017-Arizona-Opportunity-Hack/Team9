@@ -7,6 +7,8 @@
 <title>Details Added</title>
 </head>
 <body>
+<p>Details Added</p>
+<a href="parentandkidAddition.jsp"><input type="submit" value="Login" class="form-control"></a>
 
 </body>
 </html>

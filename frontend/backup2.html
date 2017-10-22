@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<!--To add a new child, repeat this process with same parent name-->
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 	<title>Arizona Foster Child Charity</title>
@@ -13,21 +16,24 @@
 	<ul class="unselectable">
 		<li><a href="adminSchedule.html">Schedule Appointment</a></li>
 		<li><a href="adminView.html">View Appointment</a></li>
-		<li><a class="active" href="adminAdd.html">Add</a></li>
-		<li><a href="adminId.html">View ID</a></li>
-		<li style="float:right"><a href="login.html">Logout</a></li>
+		<li><a class="active">Add Parent</a></li>
+		<li><a href="register.jsp">Register User</a></li>
+		<li style="float:right"><a href="LoginPage.jsp">Logout</a></li>
 	</ul>
 	<div style="margin-top:60px">
 			<div class="col-md-4 col-md-offset-4 text-center">
 				<div class="title">
 					<h2 class="unselectable">Add a Parent or Child</h2>
 				</div>
-				<form action="" class="loginForm">
+				<form action="register" method="POST" class="loginForm">
 					<div class="input-group">
-						<input type="text" name="ParentFirstName" id="name" class="form-control" placeholder="Parent's First Name">
-						<input type="text" name="ParentLastName" id="name" class="form-control" placeholder="Parent's Last Name">
-						<input type="text" name="KidFirstName" id="name" class="form-control" placeholder="Child's First Name">
-						<input type="text" name="KidLastName" id="name" class="form-control" placeholder="Child's Last Name">
+						<input type="text" name="kidId" id="name" class="form-control" placeholder="Child Name">
+						<input type="text" name="parentId" id="name" class="form-control" placeholder="Parent Name">
+						<input type="date" name="checkInTime" id="name" class="form-control" placeholder="Checkin Time">
+						<input type="date" name="checkOutTime" id="name" class="form-control" placeholder="Checkout Time">
+						<input type="text" name="numberOfPeopleVisiting" id="name" class="form-control" placeholder="Number of People Visiting">
+
+
 						<a href="schedule.html"><input type="submit" id="submit" class="form-control" value="Submit"></a>
 					</div>
 				</form>
